@@ -26,9 +26,9 @@ export default function Hero() {
             transition={{ duration: 0.5, ease: [0.4, 0.0, 0.2, 1] }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold text-neutral-800 dark:text-white max-w-5xl leading-tight text-center mx-auto"
           >
-            <span className="bg-gradient-to-r from-fintech-purple to-fintech-indigo text-transparent bg-clip-text">
-              Smart Financial Automation
-            </span>
+            Smart Financial <Highlight className="text-black dark:text-white">
+              Automation
+            </Highlight>
           </motion.h1>
           
           <motion.h2
@@ -79,9 +79,9 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.7, ease: [0.4, 0.0, 0.2, 1] }}
             className="flex flex-wrap justify-center items-center gap-8 mt-6"
           >
-            <div className="text-2xl font-bold text-blue-700">VISA</div>
-            <div className="text-2xl font-bold text-orange-600">MasterCard</div>
-            <div className="text-2xl font-bold text-green-600">RuPay</div>
+            <img src="/lovable-uploads/4789e709-474a-4b9f-861a-71e027044299.png" alt="VISA" className="h-12 object-contain" />
+            <img src="/lovable-uploads/049c940e-71da-4f0c-82cb-93efe2a6a398.png" alt="MasterCard" className="h-12 object-contain" />
+            <img src="/lovable-uploads/0e88173d-fa00-4914-aa87-a7041d1e5de3.png" alt="RuPay" className="h-12 object-contain" />
           </motion.div>
         </div>
       </HeroHighlight>
