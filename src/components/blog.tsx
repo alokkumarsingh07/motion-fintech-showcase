@@ -1,11 +1,11 @@
 
 "use client";
 import { motion } from "motion/react";
-import WobbleCardDemo from "@/components/wobble-card-demo";
+import PointerHighlightDemo from "@/components/pointer-highlight-demo";
 
-export default function Services() {
+export default function Blog() {
   return (
-    <section id="services" className="py-24 bg-gray-50 dark:bg-fintech-dark-purple/20">
+    <section id="blog" className="py-24 bg-white dark:bg-fintech-dark-purple/10">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <motion.h2
@@ -15,7 +15,7 @@ export default function Services() {
             transition={{ duration: 0.5 }}
             className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white"
           >
-            What We Offer
+            ExpSave Blog
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -24,7 +24,7 @@ export default function Services() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-10"
           >
-            Comprehensive financial solutions designed to help you save more and build wealth
+            Insights and strategies to help you maximize savings and build financial security
           </motion.p>
         </div>
 
@@ -34,7 +34,19 @@ export default function Services() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <WobbleCardDemo />
+          <PointerHighlightDemo />
+        </motion.div>
+        
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="mt-12 flex justify-center"
+        >
+          <button className="px-6 py-3 rounded-lg bg-fintech-indigo text-white hover:bg-fintech-indigo/90 transition-colors">
+            View All Articles
+          </button>
         </motion.div>
       </div>
     </section>
